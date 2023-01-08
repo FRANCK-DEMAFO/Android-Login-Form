@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".LogInActivity">
+
+    <TextView
+        android:id="@+id/imageView"
+        android:layout_width="490dp"
+        android:layout_height="111dp"
+        tools:layout_editor_absoluteX="-78dp"
+        android:text=""
+        tools:layout_editor_absoluteY="10dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="261dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="92dp"
+        android:text="Connection"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.726"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="362dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/imageView"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="60dp"
+        android:hint="Username"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:hint="Password"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="217dp"
+        android:layout_height="70dp"
+
+        android:layout_below="@+id/imageView"
+
+
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:text="Connexion"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintVertical_bias="0.383" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
